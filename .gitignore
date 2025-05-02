@@ -1,6 +1,13 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudio,visualstudiocode,pycharm,jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudio,visualstudiocode,pycharm,jupyternotebooks
 
+### Project ###
+# Ignore all files in the project directory
+# except the .gitignore file itself
+
+*.resultados/modelos/*
+*.resultados/visualizacoes/*
+
 ### JupyterNotebooks ###
 # gitignore template for Jupyter Notebooks
 # website: http://jupyter.org/
