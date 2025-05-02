@@ -3,7 +3,8 @@
 Projeto de aprendizado supervisionado para prever inadimplência de clientes com base em dados históricos.
 
 ## 📁 Estrutura do Projeto
-analise-risco-credito/ 
+```
+analise-risco-credito/
 ├── dados/ # Dados brutos e tratados 
 ├── notebooks/ # Jupyter Notebooks de EDA e modelagem
 ├── scripts/ # Scripts Python para reuso de funções 
@@ -12,6 +13,7 @@ analise-risco-credito/
 ├── relatorio/ # Relatório final do projeto 
 ├── requirements.txt # Dependências do projeto 
 └── README.md # Este arquivo
+```
 
 ---
 
@@ -92,5 +94,7 @@ colunas = joblib.load('../resultados/modelos/colunas_treinamento.pkl')
 ```
 
 ## ✅ Resultado Esperado
+```
 🧮 Probabilidade de inadimplência: 42.7%
 🚨 Cliente com alto risco de inadimplência!
+```
