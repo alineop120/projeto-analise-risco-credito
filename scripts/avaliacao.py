@@ -1,5 +1,6 @@
 from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
 
+
 def avaliar_modelo(modelo, X_teste, y_teste):
     """Exibe as métricas principais de avaliação do modelo."""
     y_pred = modelo.predict(X_teste)
