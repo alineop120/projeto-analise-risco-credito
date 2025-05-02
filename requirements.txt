@@ -10,3 +10,5 @@ joblib
 openpyxl
 streamlit
 pydantic
+ipykernel
+xlrd
