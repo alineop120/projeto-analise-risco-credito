@@ -1,8 +1,12 @@
 pandas
 numpy
-matplotlib
 seaborn
+matplotlib
 scikit-learn
+xgboost
+imbalanced-learn
+scipy
 joblib
+openpyxl
 streamlit
-ipykernel
+pydantic
