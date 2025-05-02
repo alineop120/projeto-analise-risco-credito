@@ -53,10 +53,9 @@ model_choice = st.selectbox(
 
 # Carregar o modelo com base na escolha
 model_path = {
-    "Modelo 001": "./models/modelo_001.pkl",
-    "Modelo 002": "./models/modelo_002.pkl",
-    "Modelo 003": "./models/modelo_003.pkl"
-}.get(model_choice, "./models/modelo_001.pkl")
+    "Modelo 001": "./src/models/modelo_001.pkl",
+    "Modelo 002": "./src/models/modelo_002.pkl"
+}.get(model_choice, "./src/models/modelo_001.pkl")
 
 model = joblib.load(model_path)
 
