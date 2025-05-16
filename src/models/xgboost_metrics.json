@@ -8,13 +8,13 @@
     "classifier__subsample": 0.7571539027086853
   },
   "metrics": {
-    "roc_auc": 0.7258333333333333,
-    "average_precision": 0.8461573443889481,
-    "accuracy": 0.7,
-    "precision": 0.7777777777777778,
-    "recall": 0.8,
-    "f1": 0.7887323943661971,
-    "optimization_metric": "roc_auc"
+    "roc_auc": 0.8015476190476191,
+    "average_precision": 0.6564875108029419,
+    "accuracy": 0.79,
+    "precision": 0.6875,
+    "recall": 0.55,
+    "f1": 0.6111111111111112,
+    "optimization_metric": "average_precision"
   },
-  "training_time": 1088.0541460514069
+  "training_time": 1798.1123144626617
 }

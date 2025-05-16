@@ -1,16 +1,16 @@
 {
   "model_type": "logistic",
   "best_params": {
-    "classifier__C": 56.69849511478853
+    "classifier__C": 0.0745934328572655
   },
   "metrics": {
-    "roc_auc": 0.7529761904761905,
-    "average_precision": 0.8697100532269488,
-    "accuracy": 0.7,
-    "precision": 0.8125,
-    "recall": 0.7428571428571429,
-    "f1": 0.7761194029850746,
-    "optimization_metric": "f1"
+    "roc_auc": 0.8053571428571429,
+    "average_precision": 0.6247583577793913,
+    "accuracy": 0.77,
+    "precision": 0.5897435897435898,
+    "recall": 0.7666666666666667,
+    "f1": 0.6666666666666666,
+    "optimization_metric": "average_precision"
   },
-  "training_time": 1064.7421143054962
+  "training_time": 1789.7173535823822
 }
