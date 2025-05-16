@@ -94,7 +94,9 @@ analise-risco-credito/
   <li>Ver previsão e probabilidade de inadimplência</li>
 </ul>
 
-<img src="public/image.png" alt="Preview" width="600"/>
+<div align="center">
+  <img src="public/image.png" alt="Preview" width="600"/>
+</div>
 
 <h2>▶️ Como Executar</h2>
 
