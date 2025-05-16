@@ -1,155 +1,148 @@
-<div align="center">
-  <h1>🔍 Análise de Risco de Crédito - Previsão de Inadimplência</h1>
-  <p>Projeto de machine learning para previsão de inadimplência em operações de crédito</p>
-</div>
+<h1 align="center">💰 Previsão de Inadimplência de Crédito</h1>
 
-<h2>📋 Objetivos</h2>
+<p align="center">
+  Projeto de classificação de risco de crédito usando machine learning.
+</p>
+
+<hr/>
+
+<h2>📌 Objetivo</h2>
+<p>Este projeto tem como foco a criação de modelos de aprendizado supervisionado para prever inadimplência com base em dados financeiros e demográficos de clientes.</p>
+
+<h2>📊 Dataset Utilizado</h2>
 <ul>
-  <li>Exercitar técnicas de limpeza e análise de dados com Pandas</li>
-  <li>Desenvolver análise exploratória (EDA) com visualizações</li>
-  <li>Implementar modelos de classificação (Regressão Logística, Random Forest)</li>
-  <li>Avaliar métricas de performance (AUC-ROC, precisão, recall)</li>
-  <li>Criar interface interativa com Streamlit</li>
+  <li><strong>Fonte:</strong> UCI German Credit Dataset</li>
+  <li><strong>URL:</strong> <a href="https://archive.ics.uci.edu/ml/datasets/statlog+%28german+credit+data%29" target="_blank">UCI Repository</a></li>
+  <li><strong>Target:</strong> Previsão binária (0 = adimplente, 1 = inadimplente)</li>
 </ul>
-
-<h2>🛠️ Tecnologias Utilizadas</h2>
-<div class="tech-stack">
-  <div class="tech-category">
-    <div class="tech-icon">
-      <h3>Análise de Dados</h3>
-    </div>
-    <ul>
-      <li title="Pandas">
-        <span>Pandas</span>
-      </li>
-      <li title="NumPy">
-        <span>NumPy</span>
-      </li>
-      <li title="Visualização">
-        <span>Matplotlib/Seaborn</span>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="tech-category">
-    <div class="tech-icon">
-      <h3>Machine Learning</h3>
-    </div>
-    <ul>
-      <li title="Scikit-learn">
-        <span>Scikit-learn</span>
-      </li>
-      <li title="XGBoost">
-        <span>XGBoost</span>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="tech-category">
-    <div class="tech-icon">
-      <h3>Desenvolvimento</h3>
-    </div>
-    <ul>
-      <li title="Python">
-        <span>Python</span>
-      </li>
-      <li title="Jupyter">
-        <span>Jupyter</span>
-      </li>
-      <li title="Streamlit">
-        <span>Streamlit</span>
-      </li>
-    </ul>
-  </div>
-</div>
-
 
 <h2>📁 Estrutura do Projeto</h2>
 <pre>
 analise-risco-credito/
-├── dados/               # Dados brutos e processados
-├── notebooks/           # Jupyter Notebooks (EDA e modelagem)
-│   ├── analise_exploratoria.ipynb
-│   └── treinamento_modelos.ipynb
-├── scripts/            # Funções utilitárias
-├── app/                # Aplicativo Streamlit
-│   └── app.py
-├── resultados/         # Modelos e figuras
-│   ├── modelos/
-│   └── visualizacoes/
-├── relatorio/          # Documentação final
-└── requirements.txt    # Dependências
+├── report/
+├── src/
+│   ├── notebooks/        # Jupyter Notebooks (EDA e modelagem)
+│   │   ├── eda.ipynb         # Análise Exploratória
+│   │   └── all_models.ipynb  # Modelagem e avaliação
+│   ├── models/           # Modelos gerados
+│   └── app/              # Aplicativo Streamlit
+│       └── app.py        # App Streamlit
+└── requirements.txt      # Dependências necessárias
 </pre>
 
-<h2>⚙️ Configuração do Ambiente</h2>
-<ol>
-  <li>Clone o repositório:
-    <pre><code>git clone https://github.com/alineop120/projeto-analise-risco-credito.git
-cd projeto-analise-risco-credito</code></pre>
-  </li>
-  <li>Crie e ative o ambiente virtual:
-    <pre><code>1. python -m venv .venv<br>
-2.  source .venv/bin/activate  # Linux/Mac
-    .venv\Scripts\activate     # Windows</code></pre>
-  </li>
-  <li>Instale as dependências:
-    <pre><code>pip install -r requirements.txt</code></pre>
-  </li>
-</ol>
+<h2>🔍 EDA (Análise Exploratória)</h2>
+<p>O notebook <code>eda.ipynb</code> executa:</p>
+<ul>
+  <li>Estatísticas descritivas</li>
+  <li>Visualização de distribuições</li>
+  <li>Boxplots e correlações</li>
+  <li>Detecção de outliers</li>
+</ul>
 
-<h2>🚀 Execução</h2>
-<h3>Análise Exploratória</h3>
-<pre><code>jupyter notebook notebooks/analise_exploratoria.ipynb</code></pre>
-
-<h3>Treinamento dos Modelos</h3>
-<pre><code>jupyter notebook notebooks/treinamento_modelos.ipynb</code></pre>
-
-<h3>Aplicativo Streamlit</h3>
-<pre><code>streamlit run app/app.py</code></pre>
-
-<h2>📊 Modelos Implementados</h2>
-<div class="model-grid">
-  <div>
-    <h3>Regressão Logística</h3>
-    <ul>
-      <li>Acurácia: 0.78</li>
-      <li>Precisão: 0.82</li>
-      <li>Recall: 0.71</li>
-      <li>AUC-ROC: 0.85</li>
-    </ul>
-  </div>
-  <div>
-    <h3>Random Forest</h3>
-    <ul>
-      <li>Acurácia: 0.81</li>
-      <li>Precisão: 0.84</li>
-      <li>Recall: 0.75</li>
-      <li>AUC-ROC: 0.88</li>
-    </ul>
-  </div>
-</div>
-
-<h2>📌 Variáveis Utilizadas</h2>
+<h2>🤖 Modelos Treinados</h2>
 <div align="center">
-    <table>
-    <tr>
-        <th>Categoria</th>
-        <th>Variáveis</th>
-    </tr>
-    <tr>
-        <td>Dados Demográficos</td>
-        <td>SEXO, EDUCACAO, ESTADO_CIVIL, IDADE</td>
-    </tr>
-    <tr>
-        <td>Histórico de Pagamentos</td>
-        <td>PAG_1 a PAG_6, PAGAMENTO_1 a PAGAMENTO_6</td>
-    </tr>
-    <tr>
-        <td>Informações Financeiras</td>
-        <td>LIMIT_BAL, FATURA_1 a FATURA_6</td>
-    </tr>
-    </table>
+  <p>Utilizamos 4 algoritmos clássicos com <code>RandomizedSearchCV</code> e <code>SMOTENC</code> para tratar desbalanceamento:</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Acurácia</th>
+        <th>F1-Score</th>
+        <th>ROC AUC</th>
+        <th>AP (avg precision)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Regressão Logística</td>
+        <td>70.0%</td>
+        <td>0.776</td>
+        <td>0.753</td>
+        <td>0.870</td>
+      </tr>
+      <tr>
+        <td>Random Forest</td>
+        <td>71.5%</td>
+        <td>0.799</td>
+        <td>0.784</td>
+        <td>0.900</td>
+      </tr>
+      <tr>
+        <td>XGBoost</td>
+        <td>70.0%</td>
+        <td>0.789</td>
+        <td>0.726</td>
+        <td>0.846</td>
+      </tr>
+      <tr>
+        <td>LightGBM</td>
+        <td>72.5%</td>
+        <td>0.803</td>
+        <td>0.745</td>
+        <td>0.864</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
+<h2>🖥️ Aplicação Streamlit</h2>
+<p>A interface <code>app.py</code> permite:</p>
+<ul>
+  <li>Selecionar um modelo</li>
+  <li>Inserir dados do cliente</li>
+  <li>Visualizar as métricas do modelo</li>
+  <li>Ver previsão e probabilidade de inadimplência</li>
+</ul>
+
+<img src="public/image.png" alt="Preview" width="600"/>
+
+<h2>▶️ Como Executar</h2>
+
+<h3>1. Clonar o repositório</h3>
+
+<pre><code>git clone https://github.com/alineop120/projeto-analise-risco-credito.git
+cd projeto-analise-risco-credito
+</code></pre>
+
+<h3>2. Criar ambiente virtual e instalar dependências</h3>
+
+<pre><code>python -m venv .venv
+source .venv/bin/activate   # Linux/macOS
+.venv\Scripts\activate      # Windows
+
+pip install -r requirements.txt
+</code></pre>
+
+<h3>3. Gerar os modelos (obrigatório)</h3>
+
+<p>Execute o notebook <code>all_models.ipynb</code> antes de iniciar a aplicação para gerar os arquivos <code>.pkl</code> e <code>.json</code> com os modelos treinados.</p>
+
+<h3>4. Rodar o app Streamlit</h3>
+
+<pre><code>streamlit run app.py
+</code></pre>
+
+<h3>5. Rodar os notebooks</h3>
+
+<ul>
+  <li><code>eda.ipynb</code>: Visualize a estrutura dos dados</li>
+  <li><code>all_models.ipynb</code>: Reproduza o pipeline de modelagem</li>
+</ul>
+
+<h2>📦 Dependências principais</h2>
+<ul>
+  <li>pandas, numpy, matplotlib, seaborn</li>
+  <li>scikit-learn, imbalanced-learn</li>
+  <li>xgboost, lightgbm</li>
+  <li>streamlit</li>
+</ul>
+
+<h2>🧠 Observações Técnicas</h2>
+<ul>
+  <li>Modelos foram treinados com <code>StratifiedKFold</code> (k=10)</li>
+  <li>Classificação binária com métricas otimizadas por <code>F1-Score</code> e <code>Average Precision</code></li>
+  <li>Pipeline completo com <code>SMOTENC</code> + <code>ColumnTransformer</code></li>
+</ul>
 
 <h2>👥 Equipe</h2>
 <div align="center">
@@ -182,19 +175,3 @@ cd projeto-analise-risco-credito</code></pre>
   </tr>
 </table>
 </div>
-
-<h2>📚 Fontes de Dados</h2>
-<ul>
-  <li><a href="https://www.kaggle.com/datasets/uciml/default-of-credit-card-clients-dataset">Kaggle - Default of Credit Card Clients</a></li>
-  <li><a href="https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients">UCI - Default of Credit Card Clients</a></li>
-  <li><a href="https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)">UCI - German Credit Data</a></li>
-</ul>
-
-<h2>📄 Referências</h2>
-<ul>
-  <li>Geron, A. (2019). Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow. O'Reilly Media.</li>
-  <li>Raschka, S., & Mirjalili, V. (2019). Python Machine Learning. Packt Publishing.</li>
-  <li>Brownlee, J. (2018). Machine Learning Mastery with Python. Machine Learning Mastery.</li>
-  <li>Scikit-learn Documentation. (2023). Retrieved from <a href="https://scikit-learn.org/stable/">scikit-learn.org</a></li>
-    <li>Streamlit Documentation. (2023). Retrieved from <a href="https://docs.streamlit.io/">streamlit.io</a></li>
-</ul>

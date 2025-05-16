@@ -1,8 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudio,visualstudiocode,pycharm,jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudio,visualstudiocode,pycharm,jupyternotebooks
 
-### Project ###
-/src/models/*.pkl
 
 *.resultados/modelos/*
 *.resultados/visualizacoes/*

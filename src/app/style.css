@@ -1,0 +1,75 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Métricas */
+.stMetric {
+    border-left: 4px solid #4a6fa5;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Caixas de resultado */
+.result-box {
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.result-box.good {
+    background-color: #e6f7e6;
+    border-left: 5px solid #2ecc71;
+}
+
+.result-box.bad {
+    background-color: #ffebee;
+    border-left: 5px solid #e74c3c;
+}
+
+/* Botões */
+.stButton>button {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.stButton>button:hover {
+    background-color: #3a5a80;
+    transform: translateY(-2px);
+}
+
+/* Formulário */
+.stSelectbox, .stSlider, .stNumberInput {
+    margin-bottom: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+}

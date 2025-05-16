@@ -1,0 +1,16 @@
+{
+  "model_type": "logistic",
+  "best_params": {
+    "classifier__C": 56.69849511478853
+  },
+  "metrics": {
+    "roc_auc": 0.7529761904761905,
+    "average_precision": 0.8697100532269488,
+    "accuracy": 0.7,
+    "precision": 0.8125,
+    "recall": 0.7428571428571429,
+    "f1": 0.7761194029850746,
+    "optimization_metric": "f1"
+  },
+  "training_time": 1064.7421143054962
+}

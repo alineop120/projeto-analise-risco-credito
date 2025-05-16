@@ -4,12 +4,9 @@ seaborn
 matplotlib
 scikit-learn
 xgboost
-lightgbm 
+lightgbm
 imbalanced-learn
 scipy
 joblib
 openpyxl
 streamlit
-pydantic
-ipykernel
-xlrd

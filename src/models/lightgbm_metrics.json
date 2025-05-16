@@ -1,0 +1,19 @@
+{
+  "model_type": "lightgbm",
+  "best_params": {
+    "classifier__learning_rate": 0.030710573677773714,
+    "classifier__max_depth": 7,
+    "classifier__n_estimators": 164,
+    "classifier__num_leaves": 86
+  },
+  "metrics": {
+    "roc_auc": 0.7453571428571428,
+    "average_precision": 0.8642129595913438,
+    "accuracy": 0.725,
+    "precision": 0.8057553956834532,
+    "recall": 0.8,
+    "f1": 0.8028673835125448,
+    "optimization_metric": "average_precision"
+  },
+  "training_time": 1130.1694645881653
+}

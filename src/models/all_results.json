@@ -1,0 +1,224 @@
+{
+  "logistic_roc_auc": {
+    "model_type": "logistic",
+    "best_params": {
+      "classifier__C": 0.0745934328572655
+    },
+    "metrics": {
+      "roc_auc": 0.7575000000000001,
+      "average_precision": 0.8686857526145322,
+      "accuracy": 0.705,
+      "precision": 0.8403361344537815,
+      "recall": 0.7142857142857143,
+      "f1": 0.7722007722007722,
+      "optimization_metric": "roc_auc"
+    },
+    "training_time": 1010.8139991760254
+  },
+  "logistic_f1": {
+    "model_type": "logistic",
+    "best_params": {
+      "classifier__C": 56.69849511478853
+    },
+    "metrics": {
+      "roc_auc": 0.7529761904761905,
+      "average_precision": 0.8697100532269488,
+      "accuracy": 0.7,
+      "precision": 0.8125,
+      "recall": 0.7428571428571429,
+      "f1": 0.7761194029850746,
+      "optimization_metric": "f1"
+    },
+    "training_time": 1064.7421143054962
+  },
+  "logistic_average_precision": {
+    "model_type": "logistic",
+    "best_params": {
+      "classifier__C": 0.0745934328572655
+    },
+    "metrics": {
+      "roc_auc": 0.7575000000000001,
+      "average_precision": 0.8686857526145322,
+      "accuracy": 0.705,
+      "precision": 0.8403361344537815,
+      "recall": 0.7142857142857143,
+      "f1": 0.7722007722007722,
+      "optimization_metric": "average_precision"
+    },
+    "training_time": 1060.1287593841553
+  },
+  "random_forest_roc_auc": {
+    "model_type": "random_forest",
+    "best_params": {
+      "classifier__max_depth": 48,
+      "classifier__min_samples_leaf": 4,
+      "classifier__min_samples_split": 16,
+      "classifier__n_estimators": 306
+    },
+    "metrics": {
+      "roc_auc": 0.7748809523809523,
+      "average_precision": 0.8922849913251466,
+      "accuracy": 0.725,
+      "precision": 0.8195488721804511,
+      "recall": 0.7785714285714286,
+      "f1": 0.7985347985347986,
+      "optimization_metric": "roc_auc"
+    },
+    "training_time": 1084.130075454712
+  },
+  "random_forest_f1": {
+    "model_type": "random_forest",
+    "best_params": {
+      "classifier__max_depth": 44,
+      "classifier__min_samples_leaf": 1,
+      "classifier__min_samples_split": 6,
+      "classifier__n_estimators": 430
+    },
+    "metrics": {
+      "roc_auc": 0.7838095238095238,
+      "average_precision": 0.9000379745045097,
+      "accuracy": 0.715,
+      "precision": 0.7902097902097902,
+      "recall": 0.8071428571428572,
+      "f1": 0.7985865724381626,
+      "optimization_metric": "f1"
+    },
+    "training_time": 1086.0171632766724
+  },
+  "random_forest_average_precision": {
+    "model_type": "random_forest",
+    "best_params": {
+      "classifier__max_depth": 48,
+      "classifier__min_samples_leaf": 4,
+      "classifier__min_samples_split": 16,
+      "classifier__n_estimators": 306
+    },
+    "metrics": {
+      "roc_auc": 0.7739285714285714,
+      "average_precision": 0.89061837630771,
+      "accuracy": 0.73,
+      "precision": 0.8161764705882353,
+      "recall": 0.7928571428571428,
+      "f1": 0.8043478260869565,
+      "optimization_metric": "average_precision"
+    },
+    "training_time": 1037.8321146965027
+  },
+  "xgboost_roc_auc": {
+    "model_type": "xgboost",
+    "best_params": {
+      "classifier__colsample_bytree": 0.6482131165247735,
+      "classifier__learning_rate": 0.17254716573280354,
+      "classifier__max_depth": 5,
+      "classifier__n_estimators": 221,
+      "classifier__subsample": 0.7571539027086853
+    },
+    "metrics": {
+      "roc_auc": 0.7258333333333333,
+      "average_precision": 0.8461573443889481,
+      "accuracy": 0.7,
+      "precision": 0.7777777777777778,
+      "recall": 0.8,
+      "f1": 0.7887323943661971,
+      "optimization_metric": "roc_auc"
+    },
+    "training_time": 1088.0541460514069
+  },
+  "xgboost_f1": {
+    "model_type": "xgboost",
+    "best_params": {
+      "classifier__colsample_bytree": 0.6910025277512825,
+      "classifier__learning_rate": 0.13146443027030746,
+      "classifier__max_depth": 9,
+      "classifier__n_estimators": 170,
+      "classifier__subsample": 0.6832565318746215
+    },
+    "metrics": {
+      "roc_auc": 0.7472619047619048,
+      "average_precision": 0.8651771296004264,
+      "accuracy": 0.72,
+      "precision": 0.7876712328767124,
+      "recall": 0.8214285714285714,
+      "f1": 0.8041958041958042,
+      "optimization_metric": "f1"
+    },
+    "training_time": 1034.2685914039612
+  },
+  "xgboost_average_precision": {
+    "model_type": "xgboost",
+    "best_params": {
+      "classifier__colsample_bytree": 0.6482131165247735,
+      "classifier__learning_rate": 0.17254716573280354,
+      "classifier__max_depth": 5,
+      "classifier__n_estimators": 221,
+      "classifier__subsample": 0.7571539027086853
+    },
+    "metrics": {
+      "roc_auc": 0.7258333333333333,
+      "average_precision": 0.8461573443889481,
+      "accuracy": 0.7,
+      "precision": 0.7777777777777778,
+      "recall": 0.8,
+      "f1": 0.7887323943661971,
+      "optimization_metric": "average_precision"
+    },
+    "training_time": 1087.3469681739807
+  },
+  "lightgbm_roc_auc": {
+    "model_type": "lightgbm",
+    "best_params": {
+      "classifier__learning_rate": 0.030710573677773714,
+      "classifier__max_depth": 7,
+      "classifier__n_estimators": 164,
+      "classifier__num_leaves": 86
+    },
+    "metrics": {
+      "roc_auc": 0.7453571428571428,
+      "average_precision": 0.8642129595913438,
+      "accuracy": 0.725,
+      "precision": 0.8057553956834532,
+      "recall": 0.8,
+      "f1": 0.8028673835125448,
+      "optimization_metric": "roc_auc"
+    },
+    "training_time": 1113.5227737426758
+  },
+  "lightgbm_f1": {
+    "model_type": "lightgbm",
+    "best_params": {
+      "classifier__learning_rate": 0.12469176048097844,
+      "classifier__max_depth": 6,
+      "classifier__n_estimators": 311,
+      "classifier__num_leaves": 88
+    },
+    "metrics": {
+      "roc_auc": 0.7370238095238096,
+      "average_precision": 0.8484480089369244,
+      "accuracy": 0.75,
+      "precision": 0.8082191780821918,
+      "recall": 0.8428571428571429,
+      "f1": 0.8251748251748252,
+      "optimization_metric": "f1"
+    },
+    "training_time": 1128.6382863521576
+  },
+  "lightgbm_average_precision": {
+    "model_type": "lightgbm",
+    "best_params": {
+      "classifier__learning_rate": 0.030710573677773714,
+      "classifier__max_depth": 7,
+      "classifier__n_estimators": 164,
+      "classifier__num_leaves": 86
+    },
+    "metrics": {
+      "roc_auc": 0.7453571428571428,
+      "average_precision": 0.8642129595913438,
+      "accuracy": 0.725,
+      "precision": 0.8057553956834532,
+      "recall": 0.8,
+      "f1": 0.8028673835125448,
+      "optimization_metric": "average_precision"
+    },
+    "training_time": 1130.1694645881653
+  }
+}
