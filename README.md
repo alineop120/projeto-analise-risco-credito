@@ -121,7 +121,8 @@ pip install -r requirements.txt
 
 <h3>4. Rodar o app Streamlit</h3>
 
-<pre><code>streamlit run app.py
+<pre><code>cd src/app
+streamlit run app.py
 </code></pre>
 
 <h3>5. Rodar os notebooks</h3>

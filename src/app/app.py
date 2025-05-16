@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 import json
+
 from typing import Tuple, Dict
 
 st.set_page_config(
@@ -13,7 +14,7 @@ st.set_page_config(
 
 MODEL_DIR = "../models"
 MODELOS = {
-    "Regressão Logística": "logistic",
+    "Regresão Logística": "logistic",
     "Random Forest": "random_forest",
     "XGBoost": "xgboost",
     "LightGBM": "lightgbm"
@@ -193,8 +194,10 @@ def local_css():
 def carregar_modelo(nome_modelo: str) -> Tuple[object, Dict]:
     try:
         modelo = joblib.load(f"{MODEL_DIR}/{nome_modelo}_model.pkl")
+
         with open(f"{MODEL_DIR}/{nome_modelo}_metrics.json", "r") as f:
             metricas = json.load(f)
+
         return modelo, metricas
     except Exception as e:
         st.error(f"Erro ao carregar modelo: {str(e)}")
