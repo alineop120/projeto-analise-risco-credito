@@ -1,0 +1,49 @@
+{
+  "model_type": "lightgbm",
+  "best_params": {
+    "classifier__learning_rate": 0.00727491708802781,
+    "classifier__max_depth": 10,
+    "classifier__n_estimators": 288,
+    "classifier__num_leaves": 30,
+    "classifier__subsample": 1.0
+  },
+  "metrics": {
+    "roc_auc": 0.7801818427816745,
+    "average_precision": 0.5537018371266587,
+    "accuracy": 0.763,
+    "precision": 0.472495657209033,
+    "recall": 0.6149208741522231,
+    "f1": 0.5343811394891945,
+    "optimization_metric": "average_precision"
+  },
+  "training_time": 75.31209802627563,
+  "features_used": [
+    "LIMIT_BAL",
+    "SEX",
+    "EDUCATION",
+    "MARRIAGE",
+    "AGE",
+    "PAY_0",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "BILL_AMT1",
+    "BILL_AMT2",
+    "BILL_AMT3",
+    "BILL_AMT4",
+    "BILL_AMT5",
+    "BILL_AMT6",
+    "PAY_AMT1",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "PAY_AMT6",
+    "PAYMENT_RATIO",
+    "UTILIZATION",
+    "AVG_BILL",
+    "AVG_PAY"
+  ]
+}

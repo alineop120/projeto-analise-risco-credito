@@ -1,0 +1,47 @@
+{
+  "model_type": "random_forest",
+  "best_params": {
+    "classifier__max_depth": 11,
+    "classifier__min_samples_split": 5,
+    "classifier__n_estimators": 192
+  },
+  "metrics": {
+    "roc_auc": 0.7763402483216206,
+    "average_precision": 0.5509822111091123,
+    "accuracy": 0.7923333333333333,
+    "precision": 0.5300222386953298,
+    "recall": 0.5388093443858327,
+    "f1": 0.5343796711509716,
+    "optimization_metric": "average_precision"
+  },
+  "training_time": 224.70597004890442,
+  "features_used": [
+    "LIMIT_BAL",
+    "SEX",
+    "EDUCATION",
+    "MARRIAGE",
+    "AGE",
+    "PAY_0",
+    "PAY_2",
+    "PAY_3",
+    "PAY_4",
+    "PAY_5",
+    "PAY_6",
+    "BILL_AMT1",
+    "BILL_AMT2",
+    "BILL_AMT3",
+    "BILL_AMT4",
+    "BILL_AMT5",
+    "BILL_AMT6",
+    "PAY_AMT1",
+    "PAY_AMT2",
+    "PAY_AMT3",
+    "PAY_AMT4",
+    "PAY_AMT5",
+    "PAY_AMT6",
+    "PAYMENT_RATIO",
+    "UTILIZATION",
+    "AVG_BILL",
+    "AVG_PAY"
+  ]
+}
