@@ -1,0 +1,19 @@
+{
+  "model_type": "random_forest",
+  "best_params": {
+    "classifier__max_depth": 48,
+    "classifier__min_samples_leaf": 4,
+    "classifier__min_samples_split": 16,
+    "classifier__n_estimators": 306
+  },
+  "metrics": {
+    "roc_auc": 0.7903571428571428,
+    "average_precision": 0.6358894177975233,
+    "accuracy": 0.75,
+    "precision": 0.5862068965517241,
+    "recall": 0.5666666666666667,
+    "f1": 0.576271186440678,
+    "optimization_metric": "average_precision"
+  },
+  "training_time": 1791.8057734966278
+}

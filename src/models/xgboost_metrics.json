@@ -1,0 +1,20 @@
+{
+  "model_type": "xgboost",
+  "best_params": {
+    "classifier__colsample_bytree": 0.6482131165247735,
+    "classifier__learning_rate": 0.17254716573280354,
+    "classifier__max_depth": 5,
+    "classifier__n_estimators": 221,
+    "classifier__subsample": 0.7571539027086853
+  },
+  "metrics": {
+    "roc_auc": 0.8015476190476191,
+    "average_precision": 0.6564875108029419,
+    "accuracy": 0.79,
+    "precision": 0.6875,
+    "recall": 0.55,
+    "f1": 0.6111111111111112,
+    "optimization_metric": "average_precision"
+  },
+  "training_time": 1798.1123144626617
+}
