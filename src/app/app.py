@@ -279,8 +279,7 @@ def main():
     
     with st.sidebar:
         st.markdown("### Configurações")
-        modelo_nome_ui = st.selectbox("Selecione o Modelo", list(MODELOS.keys()), 
-                                    help="Escolha o algoritmo de machine learning para análise")
+        modelo_nome_ui = st.selectbox("Selecione o Modelo", list(MODELOS.keys()), help="Escolha o algoritmo de machine learning para análise")
         st.markdown("---")
         st.markdown("""
         **Como usar:**
@@ -321,7 +320,6 @@ def main():
                             </div>
                             """, unsafe_allow_html=True)
                         
-                        # Mostrar detalhes da análise
                         with st.expander("📈 Detalhes da Análise"):
                             st.write("**Fatores mais relevantes:**")
                             st.write("- Histórico de crédito")

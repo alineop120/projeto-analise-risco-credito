@@ -10,3 +10,4 @@ scipy
 joblib
 openpyxl
 streamlit
+xlrd
